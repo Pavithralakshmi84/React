@@ -2,20 +2,20 @@ const Kerala = () => {
   return (
     <>
       <div id="kerala">
-        <h1>About Kerala</h1>
+        <h3>About Kerala</h3>
 
         <section>
-          <h2>Overview</h2>
+          <h3>Overview</h3>
           <p>Kerala, often called “God’s Own Country,” is a serene state in southern India known for its lush green landscapes, beautiful backwaters, and rich cultural heritage.</p>
         </section>
 
         <section>
-          <h2>Natural Beauty</h2>
+          <h3>Natural Beauty</h3>
           <p>Kerala features the Western Ghats mountain range, extensive backwaters including Vembanad Lake, pristine beaches like Kovalam and Marari, tea and spice plantations in Munnar, and wildlife sanctuaries.</p>
         </section>
 
         <section>
-          <h2>Cultural Highlights</h2>
+          <h3>Cultural Highlights</h3>
           <p>The state is known for classical arts like Kathakali dance, traditional Ayurveda treatments, historic temples and churches, as well as festive celebrations including Onam and Vishu.</p>
         </section>
 
@@ -29,7 +29,7 @@ const Kerala = () => {
 export const Tourist = () => {
   return (
     <div>
-      <h1>Top Tourist Places in Kerala</h1>
+      <h3>Top Tourist Places in Kerala</h3>
       <ul>
         <li>Munnar - Famous for tea estates and hill station beauty.</li>
         <li>Alleppey - Backwaters and houseboat cruises.</li>
@@ -48,7 +48,7 @@ export const Tourist = () => {
 export const Festival = () => {
   return (
     <div>
-      <h1>Top 5 Festivals in Kerala</h1>
+      <h3>Top 5 Festivals in Kerala</h3>
       <ul className="list-group">
         <li>
           <strong>Onam</strong> The grand harvest festival known for flower arrangements (Pookalam), boat races, and feasts.
