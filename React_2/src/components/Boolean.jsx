@@ -15,22 +15,30 @@ const flowers = [
 ];
 
 const Boolean = () => {
-  const showTitle = true;
+  const flower = {
+
+    isBlooming: true,
+  };
 
   return (
-    <div className="boolean-container">
-      {showTitle && <h2>Beautiful Flowers</h2>}
+    <div className="flower-status">
+      <h2>Flowers</h2>
 
-      <div className="flowers-grid">
+      {flower.isBlooming ? (
+        <div className="flowers-grid">
         {flowers.map(({ id, name, src }) => (
           <div key={id} className="flower-item">
-            <img src={src} alt={name} />
+            <img src={src} alt={name} /><br />
             <p>{name}</p>
           </div>
         ))}
-      </div>
-
-      {!showTitle && <p className="no-flowers-message">No flowers to show right now.</p>}
+      
+<br />
+          <h3>The flower is blooming!</h3>
+        </div>
+      ) : (
+        <h3>The flower is not blooming.</h3>
+      )}
     </div>
   );
 };

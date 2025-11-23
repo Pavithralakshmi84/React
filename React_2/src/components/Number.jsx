@@ -1,27 +1,22 @@
-import "../App.css";
+import React from 'react';
 
-const Number = () => {
-  // Generate array from 1 to 10
-  const rows = Array.from({ length: 10 }, (_, i) => i + 1);
+const Numbers = () => {
+  const table = [];
+
+  for (let i = 1; i <= 10; i++) {
+    table.push(
+      <p key={i}>
+        {i} x 2 = {i * 2}
+      </p>
+    );
+  }
 
   return (
-    <table border="1" cellPadding="8" style={{ borderCollapse: "collapse" }}>
-      <thead>
-        <tr>
-          <th>Table</th>
-          <th>Output</th>
-        </tr>
-      </thead>
-      <tbody>
-        {rows.map((num) => (
-          <tr key={num}>
-            <td>{`10 * ${num}`}</td>
-            <td>{10 * num}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <div style={{ textAlign: "center", marginTop: "20px" }}>
+      <h2>Multiplication Table of 2</h2>
+      {table}
+    </div>
   );
 };
 
-export default Number;
+export default Numbers;
