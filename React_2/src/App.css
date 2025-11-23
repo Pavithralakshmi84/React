@@ -1,0 +1,155 @@
+table {
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  table-layout: fixed; /* ensures fixed layout for consistent column widths */
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: center;
+  vertical-align: middle;
+  word-wrap: break-word; /* handle long text gracefully */
+}
+
+thead {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #e3f2fd;
+}
+
+table th:first-child,
+table td:first-child {
+  width: 40%;
+  text-align: left; /* better readability for first column */
+  padding-left: 20px;
+}
+
+table th:last-child,
+table td:last-child {
+  width: 60%;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Boolean component styles */
+.boolean-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.boolean-container h2 {
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.flowers-grid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flower-item {
+  text-align: center;
+}
+
+.flower-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.flower-item img:hover {
+  transform: scale(1.05);
+}
+
+.flower-item p {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.no-flowers-message {
+  color: #888;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+
+/* String component styles */
+.banner {
+  background-color: #4caf50;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 80px;
+  padding: 10px;
+  max-width: 80vw; /* corrected unit: vw for viewport width */
+}
+
+
+/* Object component styles */
+.student-details-container {
+  padding: 20px;
+  
+  max-width: 500px;
+  margin: 30px auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-details-container h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+.student-list {
+  list-style-type: tan;
+  
+}
+
+.student-list li {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+  color: #34495e;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.student-list li:last-child {
+  border-bottom: none;
+}
+
+.student-list li strong {
+  color: red;
+}
