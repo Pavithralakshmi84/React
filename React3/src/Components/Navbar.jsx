@@ -10,7 +10,8 @@ const Navbar = () => {
         <Link to="/banner" className="nav-link">Banner</Link>
         <Link to="/cards" className="nav-link">Cards</Link>
         <Link to="/state" className="nav-link">State</Link>
-        <Link to="/state1" className="nav-link">StateImg</Link>
+        <Link to="/state1" className="nav-link">State Processing</Link>
+        <Link to ="/fibo" className="nav-link">Fibanocci Series</Link>
       </div>
     </nav>
   );
