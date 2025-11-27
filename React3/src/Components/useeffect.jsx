@@ -4,7 +4,8 @@ const one = () => {
   useEffect(() => {
     console.log("useEffect 1 running");
     
-  }, []); // dependencies go here
+  }, []); 
+  
    useEffect(() => {
     console.log("useEffect 1 running");
     
@@ -81,7 +82,7 @@ const one = () => {
     
   }, []);
 
-  return null; // or return some JSX
+  return null;  
 };
 
 export default one;
