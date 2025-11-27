@@ -61,7 +61,9 @@ const StateImg = () => {
   const imgSrc = img === "nobita" ? sunflowerImage : tulipImage;
 
   return (
+    
     <div style={{ textAlign: 'center' }}>
+      <h1 style={{color:'blue'}}> State Management</h1>
       <h2>{flowers[currentIndex].name}</h2>
       <img
         src={flowers[currentIndex].src}
@@ -96,7 +98,7 @@ const StateImg = () => {
             alt={img}
             width={220}
             height={220}
-            style={{ borderRadius: 12, objectFit: "cover" }}
+            style={{ borderRadius: 1, objectFit: "fit" }}
           />
           <br />
           <button className="button" onClick={toggleimage} style={{ marginTop: 8 }}>
@@ -113,7 +115,7 @@ const StateImg = () => {
           </button>
         </div>
 
-         <div className="mainshape" style={{ textAlign: "center", borderRadius: "10%"}}>
+         <div className="mainshape" style={{ textAlign: "center" }}>
           {shape === "circle" && (
             <div style={{ width: 120, height: 120, borderRadius: "50%", background: "#ffd54f", margin: "0 auto 8px" }} />
           )}
@@ -123,23 +125,14 @@ const StateImg = () => {
           {shape === "rectangle" && (
             <div style={{ width: 160, height: 100, background: "#b39ddb", margin: "0 auto 8px" }} />
           )}
-        {shape === "triangle" && (
-  <div style={{
-      width: 0,
-      height: 0,
-      borderLeft: "60px solid transparent",
-      borderRight: "60px solid transparent",
-      borderBottom: "120px solid red",
-      margin: "0 auto 9px",
-      display: "block",
-    }}
-  />
-)}
+          {shape === "triangle" && (
+            <div style={{ width: 0, height: 0, borderLeft: "60px solid transparent", borderRight: "60px solid transparent", borderBottom: "120px solid #a5d6a7", margin: "0 auto 8px" }} />
+          )}
           <button className="button" onClick={changeshape}>
             Change Shape
           </button>
         </div>
-      </div>
+          </div>
     </div>
   );
 };

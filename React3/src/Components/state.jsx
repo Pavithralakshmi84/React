@@ -158,6 +158,5 @@ const [Lyric, setLyric]=useState("Variramuthu");
   );
 
 
-
 }
 export default State;

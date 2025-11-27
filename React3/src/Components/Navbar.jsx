@@ -12,6 +12,10 @@ const Navbar = () => {
         <Link to="/state" className="nav-link">State</Link>
         <Link to="/state1" className="nav-link">State Processing</Link>
         <Link to ="/fibo" className="nav-link">Fibanocci Series</Link>
+         <Link to ="/useEffect" className="nav-link">useEffect</Link>
+          <Link to ="/useEffect1" className="nav-link">useEffect</Link>
+
+     
       </div>
     </nav>
   );
