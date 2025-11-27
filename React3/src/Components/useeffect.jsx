@@ -2,12 +2,12 @@ import { useEffect } from "react";
 
 const one = () => {
   useEffect(() => {
-    console.log("useEffect 1 running");
+    console.log("useEffect running");
     
   }, []); 
-  
+
    useEffect(() => {
-    console.log("useEffect 1 running");
+    console.log("useEffect running");
     
   }, []);
    useEffect(() => {
