@@ -15,7 +15,9 @@ const Navbar = () => {
          <Link to ="/quote" className="nav-link">Quote</Link>
           <Link to ="/useEffect1" className="nav-link">useEffect</Link>
   <Link to ="/prop" className="nav-link">Prop</Link>
-     
+  <Link to ="/show" className="nav-link">Show</Link>
+  <Link to ="/form" className="nav-link">Form Handling</Link>
+  <Link to ="/form1" className="nav-link">Form </Link>   
       </div>
     </nav>
   );
