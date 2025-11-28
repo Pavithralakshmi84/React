@@ -53,12 +53,14 @@ const [Lyric, setLyric]=useState("Variramuthu");
   });
 
   const [Movie2, setMovie2] = useState({
+    
     name: "Vali",
     Heroine:"Simran", Director: "SJ SURYA"
     
   });
 
   const [movie3, setMovie3] = useState({
+   
     name: "Nanban",
     Heros: " Jeeva ", Comedy:"Vadivel"
   

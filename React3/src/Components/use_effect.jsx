@@ -1,34 +1,38 @@
 import React, { useEffect, useState } from "react";
+import Tickets from "../assets/quote.jpg";
 
-const StateProcess = () => {
-  const [count, setCount] = useState(0);      // how many times effect ran
-  const [time, setTime] = useState(new Date());
+const Quote = () => {
+  const [newdatas, setNewDatas] = useState([]);
+
+  const fetchDatas = async () => {
+    try {
+      const datastake = await fetch("https://dummyjson.com/quotes");
+      const res = await datastake.json();
+      const datas = res.quotes; // correct key from API
+      setNewDatas(datas);
+    } catch (err) {
+      console.error("Error fetching quotes:", err);
+    }
+  };
 
   useEffect(() => {
-    // run every 1 second
-    const id = setInterval(() => {
-      setCount((prev) => {
-        if (prev >= 23) {        // 0..23  => 24 times total
-          clearInterval(id);     // stop interval
-          return prev;
-        }
-        setTime(new Date());     // any side-effect work
-        return prev + 1;
-      });
-    }, 1000);
-
-    // cleanup if component unmounts
-    return () => clearInterval(id);
-  }, []); // start only once on mount
+    fetchDatas();
+  }, []);
 
   return (
-    <div style={{ padding: 20 }}>
-      <h2>24× useEffect demo</h2>
-      <p>Effect runs every second and stops after 24 runs.</p>
-      <p>Runs so far: {count}</p>
-      <p>Last time: {time.toLocaleTimeString()}</p>
-    </div>
+    <>
+    <img src={Tickets} alt="Tickets" style={{ width: 300, marginTop: 20 }} />
+      {newdatas.map((e) => (
+        <div key={e.id}>
+          <h1>
+            {e.id}) {e.quote} - {e.author}
+          </h1>
+        </div>
+      ))}
+
+      
+    </>
   );
 };
 
-export default StateProcess;
+export default Quote;

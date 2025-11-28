@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const one = () => {
+const One = () => {
   useEffect(() => {
     console.log("useEffect running");
     
@@ -85,4 +85,4 @@ const one = () => {
   return null;  
 };
 
-export default one;
+export default One;
