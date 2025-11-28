@@ -9,7 +9,7 @@ const [music_Director, setMDirector]=useState("Harris Jeyaraj");
 const [Lyric, setLyric]=useState("Variramuthu");
 //number
 
-  const [days, setDays] = useState(100); 
+  const [days, setDays] = useState(20); 
   const [theatre, setTheatre] = useState(50);         
   const [song, setSongs] = useState(5); 
   
@@ -90,7 +90,7 @@ const [Lyric, setLyric]=useState("Variramuthu");
 <div>
 <h2>Number Rendering</h2>
 <h3>No of Days:{days}</h3>
-<button onClick={()=>setDays(age+50)}>Days Changes</button>
+<button onClick={()=>setDays(days+10)}>Days Changes</button>
 <h3>No of Thearters:{theatre}</h3>
 <button onClick={()=>setTheatre(theatre+10)}>Theatre</button>
 <h3>No of Songs: {song}</h3>

@@ -14,7 +14,7 @@ const Navbar = () => {
         <Link to ="/fibo" className="nav-link">Fibanocci Series</Link>
          <Link to ="/quote" className="nav-link">Quote</Link>
           <Link to ="/useEffect1" className="nav-link">useEffect</Link>
-
+  <Link to ="/prop" className="nav-link">Prop</Link>
      
       </div>
     </nav>

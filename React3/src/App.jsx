@@ -6,6 +6,7 @@ import StateProcess from "./Components/state_process.jsx";
 import Fibanocci from "./Components/fibanocci.jsx";
 import Quote from "./Components/use_effect.jsx";
 import One from "./Components/useeffect.jsx";
+import Properties from "./Components/properties.jsx";
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -21,6 +22,8 @@ const App = () => {
         <Route path="/state1" element={<StateProcess />} />
            <Route path="/quote" element={<Quote />} />
         <Route path="/useEffect1" element={<One />} />
+        <Route path="/prop" element={<Properties/>} />
+        
       </Routes>
     </>
   );
