@@ -12,7 +12,7 @@ const flowers = [
   { name: 'Orchid', src: orchidImage },
 ];
 
-const StateImg = () => {
+const Stateprocess = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextFlower = () => {
@@ -137,4 +137,4 @@ const StateImg = () => {
   );
 };
 
-export default StateImg;
+export default Stateprocess;

@@ -1,4 +1,4 @@
-import Props from "./child.jsx";
+import Props from "./prop";
 
 const Properties = () => {
   const data = "Props Example";
@@ -10,4 +10,4 @@ const Properties = () => {
   );
 };
 
-export default Properties;  
+export default Properties;
